@@ -1,0 +1,32 @@
+.locations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+figure {
+  width: 25%;
+  position: relative;
+  border-radius: 25px;
+  background: linear-gradient(
+    180deg,
+    $couleur-fond-photo-1 0%,
+    $couleur-fond-photo-2 100%
+  );
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+  }
+
+  figcaption {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+}

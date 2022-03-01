@@ -4,7 +4,16 @@ body {
 }
 
 .accueil {
+  position: relative;
   img {
     border-radius: 25px;
+  }
+  h1 {
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
   }
 }
