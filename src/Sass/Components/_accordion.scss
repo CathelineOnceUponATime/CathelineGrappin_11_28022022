@@ -1,0 +1,30 @@
+details {
+  width: 582px;
+  background-color: $couleur-primaire;
+  color: white;
+  summary {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      font-family: 'Font Awesome 5 Free';
+      transform: rotate(180deg);
+    }
+    &::marker {
+      content: '';
+    }
+  }
+  p {
+    white-space: break-spaces;
+    background-color: $couleur-fond;
+    color: $couleur-primaire;
+  }
+}
+details[open] {
+  i {
+    font-family: 'Font Awesome 5 Free';
+    transform: rotate(0deg);
+  }
+}

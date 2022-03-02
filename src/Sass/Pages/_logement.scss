@@ -1,0 +1,54 @@
+.imgAppart {
+  width: 1240px;
+  height: 425px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.logement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infoLogement {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  h2,
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.infoLoueur {
+  display: flex;
+  flex-direction: column;
+  .nomImageLoueur {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
+.accordeon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

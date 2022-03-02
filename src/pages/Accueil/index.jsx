@@ -12,7 +12,6 @@ function Accueil () {
       setDataLoading(true)
       try {
         const response = await fetch('./data/logements.json')
-        console.log(response)
         const { locationList } = await response.json()
         setLocationList(locationList)
       } catch (err) {
@@ -43,6 +42,7 @@ function Accueil () {
               {locationList.map((location) => (
                 <Location
                   key={location.id}
+                  id={location.id}
                   titre={location.title}
                   image={location.cover}
                 />

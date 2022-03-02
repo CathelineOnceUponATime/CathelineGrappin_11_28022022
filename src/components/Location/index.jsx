@@ -1,10 +1,14 @@
 // import ChezVous from '../../assets/ChezVous.png'
+import { Link } from 'react-router-dom'
 
-function Location ({ titre, image, description }) {
+function Location ({ id, titre, image, description }) {
+  // const { idLogement } = useParams()
   return (
     <figure>
-      <img src={image} alt='location' />
-      <figcaption> {titre} </figcaption>
+      <Link to={`/logement/${id}`}>
+        <img src={image} alt='location' />
+        <figcaption> {titre} </figcaption>
+      </Link>
     </figure>
   )
 }
