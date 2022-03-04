@@ -12,13 +12,15 @@ import Logement from './pages/Logement'
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Header />
-      <Routes>
-        <Route exact path='/' element={<Accueil />} />
-        <Route path='/logement/:idLogement' element={<Logement />} />
-        <Route path='/apropos' element={<APropos />} />
-        <Route path='/*' element={<Error />} />
-      </Routes>
+      <div className='design'>
+        <Header />
+        <Routes>
+          <Route exact path='/' element={<Accueil />} />
+          <Route path='/logement/:idLogement' element={<Logement />} />
+          <Route path='/apropos' element={<APropos />} />
+          <Route path='/*' element={<Error />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   </React.StrictMode>,

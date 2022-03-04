@@ -11,6 +11,10 @@
 @import './Components/accordion';
 @import './Components/galerie';
 
+@import './Layout/design.scss';
+
 @import './Pages/accueil';
 @import './Pages/logement';
 @import './Pages/aPropos';
+
+@import './Layout/responsive';

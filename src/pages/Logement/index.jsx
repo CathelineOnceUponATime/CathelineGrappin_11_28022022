@@ -58,8 +58,8 @@ function Logement () {
               </div>
             </div>
             <div className='accordeon'>
-              <Accordion key={`${'description'}-${logement?.id}`} titre='description' description={logement?.description} />
-              <Accordion key={`${'equipements'}-${logement?.id}`} titre='équipements' description={logement?.equipments} />
+              <Accordion key={`${'description'}-${logement?.id}`} titre='Description' description={logement?.description} />
+              <Accordion key={`${'equipements'}-${logement?.id}`} titre='Équipements' description={logement?.equipments} />
             </div>
           </div>
           )}

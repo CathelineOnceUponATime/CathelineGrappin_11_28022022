@@ -1,9 +1,16 @@
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
 .tag {
   color: white;
   background-color: $couleur-primaire;
-  width: 115px;
   border-radius: 10px;
   text-align: center;
+  vertical-align: text-top;
   font-size: 14px;
   font-weight: 500;
+  margin-right: 30px;
+  padding: 1% 2%;
 }

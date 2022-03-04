@@ -1,0 +1,117 @@
+@media (max-width: 900px) {
+  header {
+    nav {
+      a {
+        width: 50%;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      div {
+        width: 45%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .logement,
+  .accordeon {
+    flex-direction: column;
+  }
+  .galerie img {
+    height: 255px;
+  }
+  .infoLogement {
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+  }
+  .infoLoueur {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 25px;
+    }
+    .nomImageLoueur {
+      h3 {
+        font-size: 12px;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+      }
+    }
+  }
+  details {
+    width: 100%;
+    margin-bottom: 30px;
+    summary {
+      font-size: 13px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .locations {
+    flex-direction: column;
+    figure {
+      margin: 20px 0;
+      width: 100%;
+    }
+  }
+  .accueil {
+    img {
+      height: 111px;
+    }
+    h1 {
+      font-size: 24px;
+      top: 20%;
+      left: 10%;
+      right: 0;
+    }
+  }
+  .imgAPropos {
+    height: 111px;
+  }
+  .tags {
+    flex-wrap: wrap;
+    .tag {
+      font-size: 10px;
+    }
+  }
+  .error {
+    h1 {
+      font-size: 96px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+  }
+  footer {
+    img {
+      width: 30%;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 1024px) and (min-width: 900px) {
+  .locations {
+    figure {
+      width: 40%;
+    }
+  }
+}
