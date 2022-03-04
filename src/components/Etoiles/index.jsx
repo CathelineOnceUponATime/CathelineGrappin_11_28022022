@@ -1,9 +1,13 @@
+import star from '../../assets/star_rate.svg'
+import starVide from '../../assets/star_rate-vide.svg'
+
 function Etoiles ({ etoiles }) {
-  const scaleType = <i className='fas fa-star' />
+  const etoilePleine = <img src={star} alt='star' />
+  const etoileVide = <img src={starVide} alt='star' />
   const range = [1, 2, 3, 4, 5]
   return (
     <div>
-      {range.map((rangeElem) => etoiles >= rangeElem ? (<span key={rangeElem.toString()}> {scaleType} </span>) : null)}
+      {range.map((rangeElem) => etoiles >= rangeElem ? (<span key={rangeElem.toString()}> {etoilePleine} </span>) : (<span key={rangeElem.toString()}> {etoileVide} </span>))}
     </div>
   )
 }

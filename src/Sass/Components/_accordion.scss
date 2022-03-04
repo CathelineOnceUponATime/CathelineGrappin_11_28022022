@@ -1,6 +1,6 @@
 details {
   width: 582px;
-  background-color: $couleur-primaire;
+  background-color: white;
   color: white;
   summary {
     font-size: 18px;
@@ -8,6 +8,7 @@ details {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: $couleur-primaire;
     i {
       font-family: 'Font Awesome 5 Free';
       transform: rotate(180deg);
@@ -23,8 +24,19 @@ details {
   }
 }
 details[open] {
+  background-color: $couleur-fond;
   i {
     font-family: 'Font Awesome 5 Free';
     transform: rotate(0deg);
+  }
+}
+
+.accordeonWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .accordion {
+    width: 80%;
+    margin: 0% 10% 20px 10%;
   }
 }

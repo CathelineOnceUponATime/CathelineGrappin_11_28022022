@@ -1,18 +1,20 @@
 /* eslint-env jquery */
 
-function Accordion ({ titre, description }) {
+function Accordion ({ taille, titre, description }) {
+  const detailGrand = taille?.length > 0
+
+  function getClassName () {
+    return detailGrand > 0 ? 'accordion' : ''
+  }
+
   return (
-    <div>
-      <details open>
-        <summary> {titre} <i className='fas fa-2x fa-chevron-up' /> </summary>
-        <div>
-          <p> {Array.isArray(description)
-            ? (description.map(desc => desc + '\n '))
-            : (description)}
-          </p>
-        </div>
-      </details>
-    </div>
+    <details className={getClassName()} open>
+      <summary> {titre} <i className='fas fa-2x fa-chevron-up' /> </summary>
+      <p> {Array.isArray(description)
+        ? (description.map(desc => desc + '\n '))
+        : (description)}
+      </p>
+    </details>
   )
 }
 

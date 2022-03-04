@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import Tag from '../../components/Tag'
 import Etoiles from '../../components/Etoiles'
 import Accordion from '../../components/Accordion'
+import Galerie from '../../components/Galerie'
 
 function Logement () {
   const { idLogement } = useParams()
@@ -37,7 +38,7 @@ function Logement () {
         ? (<h1>  Error </h1>)
         : (
           <div>
-            <img className='imgAppart' src={logement?.cover} alt={logement?.title} />
+            <Galerie pictures={logement?.pictures} />
             <div className='logement'>
               <div className='infoLogement'>
                 <h1> {logement?.title} </h1>

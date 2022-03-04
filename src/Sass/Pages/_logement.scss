@@ -1,8 +1,8 @@
 .imgAppart {
-  width: 1240px;
-  height: 425px;
+  width: 90%;
   object-fit: cover;
   border-radius: 25px;
+  margin: 30px 5% 30px 5%;
 }
 
 .logement {
@@ -51,4 +51,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.vide {
+  color: $couleur-etoiles-non-aquises;
 }
