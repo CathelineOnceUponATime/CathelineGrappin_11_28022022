@@ -1,3 +1,7 @@
+/* eslint-disable no-redeclare */
+/* global fetch */
+/* eslint no-undef: "error" */
+
 import chezVous from '../../assets/ChezVous.png'
 import Location from '../../components/Location'
 import { useState, useEffect } from 'react'

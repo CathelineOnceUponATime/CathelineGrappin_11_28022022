@@ -8,7 +8,7 @@ function Accordion ({ taille, titre, description }) {
   }
 
   return (
-    <details className={getClassName()} open>
+    <details className={getClassName()}>
       <summary> {titre} <i className='fas fa-2x fa-chevron-up' /> </summary>
       <p> {Array.isArray(description)
         ? (description.map(desc => desc + '\n '))
