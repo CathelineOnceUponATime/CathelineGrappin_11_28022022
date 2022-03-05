@@ -25,11 +25,11 @@ function Accueil () {
   }
 
   return (
-    <div>
-      <div className='accueil'>
+    <article>
+      <header className='accueil'>
         <img src={chezVous} alt='Chez vous' />
         <h1> Chez vous, partout et ailleurs </h1>
-      </div>
+      </header>
       <div className='locations'>
         {locationList.map((location) => (
           <Location
@@ -40,7 +40,7 @@ function Accueil () {
           />
         ))}
       </div>
-    </div>
+    </article>
   )
 }
 

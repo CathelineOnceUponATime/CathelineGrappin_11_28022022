@@ -21,11 +21,11 @@ function Galerie ({ pictures }) {
   }
 
   return (
-    <div className='galerie'>
+    <section className='galerie'>
       <button id='precedent' onClick={() => setPhotoSuivante(false)}> <i className='fa-solid fa-3x fa-angle-left' /> </button>
       <img id='imgLogement' src={pictures?.[0]} alt='logement' />
       <button id='suivant' onClick={() => setPhotoSuivante(true)}> <i className='fa-solid fa-3x fa-angle-right' /> </button>
-    </div>
+    </section>
   )
 }
 

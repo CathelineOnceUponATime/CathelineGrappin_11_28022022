@@ -12,7 +12,7 @@ import Logement from './pages/Logement'
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <div className='design'>
+      <main className='design'>
         <Header />
         <Routes>
           <Route exact path='/' element={<Accueil />} />
@@ -20,7 +20,7 @@ ReactDOM.render(
           <Route path='/apropos' element={<APropos />} />
           <Route path='/*' element={<Error />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </Router>
   </React.StrictMode>,
