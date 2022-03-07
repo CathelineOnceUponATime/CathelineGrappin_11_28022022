@@ -2,7 +2,6 @@
 /* global fetch */
 /* eslint no-undef: "error" */
 
-import chezVous from '../../assets/ChezVous.png'
 import Location from '../../components/Location'
 import { useState, useEffect } from 'react'
 
@@ -30,10 +29,9 @@ function Accueil () {
 
   return (
     <article>
-      <header className='accueil'>
-        <img src={chezVous} alt='Chez vous' />
+      <div className='accueil'>
         <h1> Chez vous, partout et ailleurs </h1>
-      </header>
+      </div>
       <div className='locations'>
         {locationList.map((location) => (
           <Location
