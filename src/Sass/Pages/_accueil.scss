@@ -7,7 +7,7 @@
     'footer footer footer';
   min-height: 100vh;
   grid-template-rows: auto 10rem;
-  // grid-template-columns: auto $wrapper auto;
+  grid-template-columns: auto var(--wrapper) auto;
 }
 body {
   margin: 0;

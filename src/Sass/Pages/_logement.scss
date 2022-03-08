@@ -31,6 +31,8 @@
 .infoLoueur {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .nomImageLoueur {
     display: flex;
     flex-direction: row;

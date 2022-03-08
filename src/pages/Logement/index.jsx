@@ -41,7 +41,7 @@ function Logement () {
         <div>
           <Galerie pictures={logement?.pictures} />
           <div className='logement'>
-            <article className='infoLogement'>
+            <div className='infoLogement'>
               <h1> {logement?.title} </h1>
               <h2> {logement?.location} </h2>
               <section className='tags'>
@@ -49,12 +49,12 @@ function Logement () {
                   <Tag key={`${tag}-${index}`} tag={tag} />
                 ))}
               </section>
-            </article>
+            </div>
             <section className='infoLoueur'>
-              <article className='nomImageLoueur'>
+              <div className='nomImageLoueur'>
                 <h3> {logement?.host.name} </h3>
                 <img src={logement?.host.picture} alt={logement?.host.name} />
-              </article>
+              </div>
               <Etoiles key={`${logement?.rating}-${logement?.id}`} etoiles={logement?.rating} />
             </section>
           </div>

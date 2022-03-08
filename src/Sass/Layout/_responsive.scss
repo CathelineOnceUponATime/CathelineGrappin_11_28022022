@@ -1,4 +1,27 @@
-@media (max-width: 900px) {
+:root {
+  --wrapper: 1440px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --wrapper: 320px;
+  }
+  .locations {
+    background-color: transparent;
+  }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+  :root {
+    --wrapper: 720px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1480px) {
+  :root {
+    --wrapper: 1080px;
+  }
+}
+
+@media (max-width: 1100px) {
   header {
     nav {
       a {
@@ -61,13 +84,6 @@
       font-size: 12px;
     }
   }
-  .locations {
-    flex-direction: column;
-    figure {
-      margin: 20px 0;
-      width: 100%;
-    }
-  }
   .accueil {
     img {
       height: 111px;
@@ -105,13 +121,6 @@
     }
     p {
       font-size: 12px;
-    }
-  }
-}
-@media (max-width: 1024px) and (min-width: 900px) {
-  .locations {
-    figure {
-      width: 40%;
     }
   }
 }
