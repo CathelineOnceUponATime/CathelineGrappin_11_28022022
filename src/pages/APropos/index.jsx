@@ -1,10 +1,9 @@
 import Accordion from '../../components/Accordion'
-import ImgAPropos from '../../assets/APropos.png'
 
 function APropos () {
   return (
     <section>
-      <img className='imgAPropos' src={ImgAPropos} alt='A Propos' />
+      <div className='imgAPropos' />
       <div className='accordeonWrap'>
         <Accordion taille='g' titre='Fiabilité' description='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.' />
         <Accordion taille='g' titre='Respect' description='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.' />

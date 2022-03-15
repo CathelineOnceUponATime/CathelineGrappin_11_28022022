@@ -17,7 +17,7 @@
   h1 {
     font-size: 36px;
     font-weight: 500;
-    margin: 0;
+    margin: 10px 0px 5px 0px;
   }
 
   h2,
@@ -33,6 +33,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  span {
+    font-size: 0;
+    img {
+      width: 30px;
+    }
+  }
+
   .nomImageLoueur {
     display: flex;
     flex-direction: row;

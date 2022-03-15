@@ -8,6 +8,19 @@
   }
   .locations {
     background-color: transparent;
+    a {
+      border-radius: 10px;
+      height: 255px;
+      width: 100%;
+      margin: 10px 0;
+      img {
+        height: 255px;
+        width: 100%;
+      }
+    }
+  }
+  .imgAPropos {
+    background-image: url('../../assets/apropos2.png');
   }
   nav a img {
     width: 100%;
@@ -18,10 +31,16 @@
   :root {
     --wrapper: 720px;
   }
+  .imgAPropos {
+    background-image: url('../../assets/APropos.png');
+  }
 }
 @media (min-width: 1100px) and (max-width: 1480px) {
   :root {
     --wrapper: 1080px;
+  }
+  .imgAPropos {
+    background-image: url('../../assets/APropos.png');
   }
 }
 
@@ -64,9 +83,12 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    img {
-      width: 25px;
+    span {
+      img {
+        width: 15px;
+      }
     }
+
     .nomImageLoueur {
       h3 {
         font-size: 12px;
@@ -83,16 +105,26 @@
     width: 100%;
     summary {
       font-size: 13px;
+      height: 30px;
+      i {
+        font-size: 15px;
+      }
     }
     p {
       font-size: 12px;
     }
   }
-  .accueil {
-    img {
-      height: 111px;
+  .accordeonWrap .accordion {
+    summary {
+      height: 30px;
     }
+  }
+  .accueil {
+    height: 111px;
+    background-position: center;
+    border-radius: 10px;
     h1 {
+      height: 111px;
       font-size: 24px;
       top: 20%;
       left: 10%;
@@ -100,7 +132,7 @@
     }
   }
   .imgAPropos {
-    height: 111px;
+    background-position: center;
   }
   .tags {
     flex-wrap: wrap;

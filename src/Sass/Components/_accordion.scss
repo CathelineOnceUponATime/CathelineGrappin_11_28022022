@@ -13,10 +13,13 @@ details {
     background-color: $couleur-primaire;
     border-radius: 10px;
     padding-left: 20px;
+    height: 52px;
     i {
-      font-family: 'Font Awesome 5 Free';
+      font-family: 'Font Awesome 6 Free';
       transform: rotate(180deg);
+      font-size: 30px;
       margin-right: 20px;
+      text-align: center;
     }
     &::marker {
       content: '';
@@ -32,7 +35,7 @@ details {
 details[open] {
   background-color: $couleur-fond;
   i {
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     transform: rotate(0deg);
   }
 }
@@ -44,5 +47,10 @@ details[open] {
   .accordion {
     width: 80%;
     margin: 0% 10% 20px 10%;
+    border-radius: 5px;
+    summary {
+      border-radius: 5px;
+      height: 47px;
+    }
   }
 }
