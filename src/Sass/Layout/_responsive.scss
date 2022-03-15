@@ -106,6 +106,7 @@
     summary {
       font-size: 13px;
       height: 30px;
+      border-radius: 5px;
       i {
         font-size: 15px;
       }
@@ -128,18 +129,20 @@
     h1 {
       height: 111px;
       font-size: 24px;
-      top: 20%;
-      left: 10%;
-      right: 0;
+      text-align: left;
+      margin-left: 10px;
+      width: 70%;
     }
   }
   .imgAPropos {
     background-position: center;
+    border-radius: 10px;
   }
   .tags {
     flex-wrap: wrap;
     .tag {
       font-size: 10px;
+      border-radius: 5px;
     }
   }
   .error {
